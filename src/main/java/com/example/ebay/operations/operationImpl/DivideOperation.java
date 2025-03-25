@@ -3,7 +3,9 @@ package com.example.ebay.operations.operationImpl;
 import com.example.ebay.exceptions.DivideByZeroException;
 import com.example.ebay.exceptions.InvalidInputException;
 import com.example.ebay.operations.OperationStrategy;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DivideOperation implements OperationStrategy {
 
     @Override

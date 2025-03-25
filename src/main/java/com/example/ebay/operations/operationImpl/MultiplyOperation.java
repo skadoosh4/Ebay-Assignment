@@ -2,7 +2,9 @@ package com.example.ebay.operations.operationImpl;
 
 import com.example.ebay.exceptions.InvalidInputException;
 import com.example.ebay.operations.OperationStrategy;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MultiplyOperation implements OperationStrategy {
     @Override
     public Number calculate(Number num1, Number num2) {
