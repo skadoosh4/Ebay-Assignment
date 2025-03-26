@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MultiplyOperation implements OperationStrategy {
     @Override
-    public Number calculate(Number num1, Number num2) {
+    public Number apply(Number num1, Number num2) {
         if(num1 == null || num2 == null){
             throw new InvalidInputException();
         }

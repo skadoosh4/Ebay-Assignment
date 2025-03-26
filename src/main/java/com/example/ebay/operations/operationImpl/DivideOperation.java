@@ -9,11 +9,11 @@ import org.springframework.stereotype.Component;
 public class DivideOperation implements OperationStrategy {
 
     @Override
-    public Number calculate(Number num1, Number num2) {
+    public Number apply(Number num1, Number num2) {
         if(num1 == null || num2 == null){
             throw new InvalidInputException();
         }
-        if(num2.doubleValue() == 0){
+        if(num2.doubleValue() == 0.0){
             throw new DivideByZeroException();
         }
         return num1.doubleValue() / num2.doubleValue();
