@@ -6,6 +6,9 @@ public class OperationStep {
     private Operation operation;
     private Number value;
 
+    public OperationStep(Operation operation, int i) {
+    }
+
     public Operation getOperation() {
         return operation;
     }
